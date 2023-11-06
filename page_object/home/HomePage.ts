@@ -13,10 +13,10 @@ class HomePage{
 
     constructor(page: Page) {
         this.page = page
-        this.logoMembrain = (page.locator('.site-logo--logo'))
+        this.logoMembrain = page.locator('.site-logo--logo')
         this.linkProducts = page.getByRole('menuitem', { name: 'Products' })
         this.linkSeeMembrain = page.getByRole('menuitem', { name: 'See Membrain' })
-        this.textMakeHowYouSellWhyYouWin =page.getByRole('heading', { name: 'MAKE HOW YOU SELL WHY YOU WIN' })
+        this.textMakeHowYouSellWhyYouWin = page.getByRole('heading', { name: 'MAKE HOW YOU SELL WHY YOU WIN' })
     }
 
     async verifyMembrainHomePage() {
