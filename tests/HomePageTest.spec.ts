@@ -6,7 +6,7 @@ test('Test that when membrane url is launched then logo and all menu items are d
   let homePage = new HomePage(page)
 
   // Step1: Launch URL on browser
-  homePage.launchUrl()
+  await homePage.launchUrl()
 
   // Step2:  Verify Home Page and its menu
   await homePage.verifyMembrainHomePage()
