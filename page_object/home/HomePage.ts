@@ -4,7 +4,6 @@ const { expect } = require('@playwright/test');
 // Read the test data from JSON file
 const testData = JSON.parse(JSON.stringify(require('../../test_data/test_data.json')))
 
-
 class HomePage{
     page:Page
     logoMembrain:Locator
